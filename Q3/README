@@ -1,0 +1,21 @@
+
+run ./main execuatble in 
+
+and for cgroup addition of process and its child  uncomment below lines from line 51 in main.c file and compile using gcc main.c -o main
+
+
+/////// 
+FILE *fptr;
+fptr = fopen("/sys/fs/cgroup/cpu/my_group/tasks","w");
+    
+if(fptr == NULL){
+   printf("Error!");   
+}
+fprintf(fptr,"%d",pid_curr);
+fclose(fptr);
+////////
+
+and create a cpu cgroup my_group and vary parameter as mentioned in Results.pdf file
+
+
+    

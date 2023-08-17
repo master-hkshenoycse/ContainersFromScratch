@@ -1,0 +1,9 @@
+cpu_heavy is the executable used for cpu heavy process
+
+it is compiled from cpu_heavy.c
+by gcc cpu_heavy.c -o cpu_heavy
+
+Results and correspnding shell command used for experimenting along with results and graps are in Results.pdf file
+
+run_12.sh is shell script to be used for part 2 of question to load the CPU for cpu.shares to show effect.
+
